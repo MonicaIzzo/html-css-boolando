@@ -1,0 +1,31 @@
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+/* Custom PROPERTIES */
+.root {
+    --title-color: #e53170;
+    --link-color: #00abe9;
+}
+
+
+
+
+/* Generics */
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+
+/* Utilties */
+
+
+/* Header */
+
+/* Main */
+
+/* Footer */
