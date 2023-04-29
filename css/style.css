@@ -7,8 +7,13 @@ box-sizing: border-box;
 
 /* Custom PROPERTIES */
 .root {
-    --title-color: #e53170;
-    --link-color: #00abe9;
+    --orange: #ff6900;
+    --sales: #ff0000;
+    --sustainability: #008000;
+
+    --space-xxsmal: 5px;
+    --space-small: 15px;
+    --space-large: 30px; 
 }
 
 
@@ -16,16 +21,34 @@ box-sizing: border-box;
 
 /* Generics */
 body {
-    font-family: 'Fredoka', sans-serif;
+    padding-top: 100px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
 
 /* Utilties */
+.cointaniner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 
 /* Header */
+nav {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ff6900;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 
 /* Main */
+.heart {
+    font-size: 2rew;
+}
 
 /* Footer */
