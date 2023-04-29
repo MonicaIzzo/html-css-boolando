@@ -79,6 +79,12 @@ nav ul a {
     margin: var(--space-xxsmal);
 }
 
+nav ul a:hover {
+    text-decoration: none;
+    color: grey;
+    margin: var(--space-xxsmal);
+}
+
 .logo {
     height: 40px;
     display: block;
@@ -88,8 +94,45 @@ nav ul a {
     font-size: 24px;
     margin: 0 var(--space-xxsmal);
 }
+i.fa-regular {
+    color: #ffffff;
+}
+
+i.fa-regular:hover {
+    color: grey;
+}
+
+i.fa-solid {
+    color: #ffffff;
+}
+
+i.fa-solid:hover {
+    color: grey;
+}
 
 /* Main */
+main {
+    background-color: aqua;
+    min-height: 100px; /* da togliere a fine progetto */
+    display: flex;
+    gap: var(--space-large);
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc((100% / 3) - 20px);
+    height: 100px;
+    min-height: 80px; /* da togliere a fine progetto */
+    background-color: yellow;
+    border: 2px dotted red;
+}
+
+/* .card-items {
+    width: 100%;
+    height: 80px;
+    background-color: red;
+}
+*/
 .heart {
     font-size: 2rew;
 }
@@ -101,6 +144,7 @@ footer {
     width: 100%;
     height: 120px;
     padding: var(--space-large);
+    margin-top:var(--space-large);
 }
 
 .footer-content {
@@ -135,4 +179,15 @@ footer h3 {
 }
 .social a {
     text-decoration: none;
+}
+
+.credits a:hover {
+    color: var(--orange);
+}
+.social .fa-brands {
+    color: #feffff;
+}
+
+.social .fa-brands:hover {
+    color: var(--orange);
 }
