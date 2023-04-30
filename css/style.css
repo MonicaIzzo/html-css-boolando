@@ -35,6 +35,7 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 
@@ -51,21 +52,28 @@ top: 0;
 left: 0;
 display: flex;
 box-shadow: 0px 0px 10px 0px grey;
+z-index: 99;
 }
 
 
 nav {
+    width: 100%;;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     color: white;
-    width: 100%;
 }
 
 .collections {
     display: flex;
+}
+
+.nav-menu, .logo, .login {
+    width: calc(100% /3);
+    text-align: end;
+    text-align: right;
 }
 
 nav ul {
@@ -86,9 +94,10 @@ nav ul a:hover {
 }
 
 .logo {
-    height: 40px;
-    display: block;
-}
+        /* height: 40px; */
+        display: block;
+        margin: 0 auto;
+    }
 
 .icon {
     font-size: 24px;
@@ -112,8 +121,6 @@ i.fa-solid:hover {
 
 /* Main */
 main {
-    background-color: aqua;
-    min-height: 100px; /* da togliere a fine progetto */
     display: flex;
     gap: var(--space-large);
     flex-wrap: wrap;
@@ -121,20 +128,68 @@ main {
 
 .card {
     flex-basis: calc((100% / 3) - 20px);
-    height: 100px;
-    min-height: 80px; /* da togliere a fine progetto */
-    background-color: yellow;
-    border: 2px dotted red;
+    position: relative;
+    z-index: 0;
 }
 
-/* .card-items {
-    width: 100%;
-    height: 80px;
-    background-color: red;
+.img-items::after {
+    content: url(../img/heart-solid.svg);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    color: #ff0000;
+    background: #ffffff;
+    padding: 6px;
+
+
 }
-*/
-.heart {
-    font-size: 2rew;
+
+.sale-price {
+    font-weight: 600;
+    color: red;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.discount {
+    font-weight: bold;
+    color: white;
+    background-color: var(--sales);
+    padding: 5px 10px;
+}
+
+.info {
+    font-weight: bold;
+    color: white;
+    background-color: var(--sustainability);
+    padding: 5px 10px;
+}
+.badge {
+    position: absolute;
+        bottom: 100px;
+        left: 0;
+        z-index: 10;
+}
+
+
+.img-items {
+    position: relative;
+}
+
+.img-overlayer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+}
+
+.img-overlayer:hover {
+    opacity: 1;
 }
 
 /* Footer */
@@ -167,10 +222,6 @@ footer ul li a {
 
 footer h3 {
     line-height: 40px;
-}
-
-.credits {
-    
 }
 
 .social p {
