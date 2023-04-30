@@ -238,7 +238,6 @@ footer h3 {
 .social .fa-brands {
     color: #feffff;
 }
-
 .social .fa-brands:hover {
     color: var(--orange);
 }
