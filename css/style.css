@@ -1,252 +1,243 @@
 /* Reset CSS */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Custom PROPERTIES */
 :root {
-    --orange: #ff6900;
-    --sales: #ff0000;
-    --sustainability: #008000;
+  --orange: #ff6900;
+  --sales: #ff0000;
+  --sustainability: #008000;
 
-    --space-xxsmal: 5px;
-    --space-small: 15px;
-    --space-large: 30px; 
+  --space-xxsmal: 5px;
+  --space-small: 15px;
+  --space-large: 30px;
 }
-
-
-
 
 /* Generics */
 body {
-    padding-top: 100px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-top: 100px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-
 
 /* Utilties */
 .conteiner {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
-
 
 /* Header */
-
 header {
-background: #ff6900;
-height: 70px;
-width: 100%;
-padding: var(--space-small);
-margin-bottom: var(--space-large);
-position: fixed;
-top: 0;
-left: 0;
-display: flex;
-box-shadow: 0px 0px 10px 0px grey;
-z-index: 99;
+  background: #ff6900;
+  height: 70px;
+  width: 100%;
+  padding: var(--space-small);
+  margin-bottom: var(--space-large);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  box-shadow: 0px 0px 10px 0px grey;
+  z-index: 99;
 }
 
-
 nav {
-    width: 100%;;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  color: white;
 }
 
 .collections {
-    display: flex;
+  display: flex;
 }
 
-.nav-menu, .logo, .login {
-    width: calc(100% /3);
-    text-align: end;
-    text-align: right;
+.nav-menu,
+.logo,
+.login {
+  width: calc(100% / 3);
+  text-align: end;
+  text-align: right;
 }
 
 nav ul {
-    list-style-type: none;
-    font-weight: bold;
+  list-style-type: none;
+  font-weight: bold;
 }
 
 nav ul a {
-    text-decoration: none;
-    color: white;
-    margin: var(--space-xxsmal);
+  text-decoration: none;
+  color: white;
+  margin: var(--space-xxsmal);
 }
 
 nav ul a:hover {
-    text-decoration: none;
-    color: grey;
-    margin: var(--space-xxsmal);
+  text-decoration: none;
+  color: grey;
+  margin: var(--space-xxsmal);
 }
 
 .logo {
-        /* height: 40px; */
-        display: block;
-        margin: 0 auto;
-    }
+  /* height: 40px; */
+  display: block;
+  margin: 0 auto;
+}
 
 .icon {
-    font-size: 24px;
-    margin: 0 var(--space-xxsmal);
+  font-size: 24px;
+  margin: 0 var(--space-xxsmal);
 }
 i.fa-regular.icon {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 i.fa-regular.icon:hover {
-    color: grey;
+  color: grey;
 }
 
 i.fa-solid {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 i.fa-solid:hover {
-    color: grey;
+  color: grey;
 }
 
 /* Main */
 main {
-    display: flex;
-    gap: var(--space-large);
-    flex-wrap: wrap;
+  display: flex;
+  gap: var(--space-large);
+  flex-wrap: wrap;
 }
 
 .card {
-    flex-basis: calc((100% / 3) - 20px);
-    position: relative;
-    z-index: 0;
+  flex-basis: calc((100% / 3) - 20px);
+  position: relative;
+  z-index: 0;
 }
 
 .fa-solid.fa-heart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-    color: black;
-    background: white;
-    padding: 6px;
-    font-size: 26px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: black;
+  background: white;
+  padding: 6px;
+  font-size: 26px;
 }
 
 .fa-solid.fa-heart:hover {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-    color: #ff0000;
-    background: white; 
-    padding: 6px;
-    font-size: 26px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: #ff0000;
+  background: white;
+  padding: 6px;
+  font-size: 26px;
 }
 
-
-
 .sale-price {
-    font-weight: 600;
-    color: red;
+  font-weight: 600;
+  color: red;
 }
 
 .price {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .discount {
-    font-weight: bold;
-    color: white;
-    background-color: var(--sales);
-    padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--sales);
+  padding: 5px 10px;
 }
 
 .info {
-    font-weight: bold;
-    color: white;
-    background-color: var(--sustainability);
-    padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--sustainability);
+  padding: 5px 10px;
 }
 .badge {
-    position: absolute;
-        bottom: 100px;
-        left: 0;
-        z-index: 10;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  z-index: 10;
 }
 
-
 .img-items {
-    position: relative;
+  position: relative;
 }
 
 .img-overlayer {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
 }
 
 .img-overlayer:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Footer */
 footer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 120px;
-    padding: var(--space-large);
-    margin-top:var(--space-large);
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 120px;
+  padding: var(--space-large);
+  margin-top: var(--space-large);
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 footer ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 footer ul li a {
-    text-decoration: none;
-    color: white;
-    margin-right: var(--space-small);
-    font-size: 14px;
+  text-decoration: none;
+  color: white;
+  margin-right: var(--space-small);
+  font-size: 14px;
 }
 
 footer h3 {
-    line-height: 40px;
+  line-height: 40px;
 }
 
 .social p {
-    font-size: 14px;
-    line-height: 40px;
+  font-size: 14px;
+  line-height: 40px;
 }
 .social a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .credits a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
 .social .fa-brands {
-    color: #feffff;
+  color: #feffff;
 }
 .social .fa-brands:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
